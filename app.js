@@ -278,9 +278,11 @@ function receivedMessage(event) {
       case 'button':
         sendButtonMessage(senderID);
         break;
- case 'deneme':
+       
+      case 'deneme':
         sendDenemeMessage(senderID);
         break;
+     
       case 'generic':
         sendGenericMessage(senderID);
         break;
@@ -541,12 +543,8 @@ function sendDenemeMessage(recipientId) {
     },
     message: {
       attachment: {
-        type: "template",
-        payload: {
-          template_type: "deneme",
-          text: "Mal Doruk",
-         
-        }
+         text: "deneme",
+      title: "mal doruk"
       }
     }
   };  
