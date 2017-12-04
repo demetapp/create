@@ -551,7 +551,7 @@ function sendButtonMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "This is testtest text",
+          text: "Mal doruk",
           buttons:[{
             type: "web_url",
             url: "https://www.oculus.com/en-us/rift/",
