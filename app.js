@@ -278,7 +278,9 @@ function receivedMessage(event) {
       case 'button':
         sendButtonMessage(senderID);
         break;
-
+      case 'deneme':
+        sendDenemeMessage(senderID);
+        break;
       case 'generic':
         sendGenericMessage(senderID);
         break;
@@ -571,7 +573,7 @@ function sendButtonMessage(recipientId) {
   callSendAPI(messageData);
 }
 
-function senddenemeMessage(recipientId) {
+function sendDenemeMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
