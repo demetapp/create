@@ -543,7 +543,7 @@ function sendDenemeMessage(recipientId) {
     },
     message: {
      
-         text: "deneme", 
+         text: "Doruk mal", 
 
     }
   };  
