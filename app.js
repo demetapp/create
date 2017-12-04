@@ -583,7 +583,7 @@ function sendDenemeMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "deneme",
-          text: "mal doruk",
+          title: "mal doruk",
           
         }
       }
