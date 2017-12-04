@@ -571,7 +571,7 @@ function sendButtonMessage(recipientId) {
   callSendAPI(messageData);
 }
 
-function sendButtonMessage(recipientId) {
+function senddenemeMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
