@@ -542,10 +542,9 @@ function sendDenemeMessage(recipientId) {
       id: recipientId
     },
     message: {
-      attachment: {
-         text: "deneme",
-      title: "mal doruk"
-      }
+     
+         text: "deneme", 
+
     }
   };  
 
@@ -565,7 +564,7 @@ function sendButtonMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Mal doruk",
+          text: "Mal ddoruk",
           buttons:[{
             type: "web_url",
             url: "https://www.oculus.com/en-us/rift/",
