@@ -298,7 +298,10 @@ function receivedMessage(event) {
       case 'typing on':
         sendTypingOn(senderID);
         break;        
-
+      case 'deneme':
+        senddenemeMessage(senderID);
+        break;
+        
       case 'typing off':
         sendTypingOff(senderID);
         break;        
@@ -568,6 +571,25 @@ function sendButtonMessage(recipientId) {
   callSendAPI(messageData);
 }
 
+function sendButtonMessage(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "deneme",
+          text: "mal doruk",
+          
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
  *
