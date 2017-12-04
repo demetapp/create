@@ -572,26 +572,20 @@ function sendButtonMessage(recipientId) {
 
   callSendAPI(messageData);
 }
-
 function sendDenemeMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "deneme",
-          title: "mal doruk",
-          
-        }
-      }
+      text: "deneme"
+      title: "mal doruk"
     }
-  };  
+  };
 
   callSendAPI(messageData);
 }
+
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
  *
