@@ -556,7 +556,7 @@ function sendTextMessage(recipientId, messageText) {
               {
             type: "postback",
             title: "Koleksiyonlar",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
+           
           },
             {
             type: "web_url",
