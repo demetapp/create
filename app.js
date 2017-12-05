@@ -539,7 +539,7 @@ function sendTextMessage(recipientId) {
             title: "Satış Noktalarımız"
           }, {
             type: "postback",
-            title: "Koleksiyonlar hakkında bilgi almak istiyorum",
+            title: "Koleksiyonlar </br> hakkında bilgi </br> almak istiyorum",
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           }, {
             type: "phone_number",
