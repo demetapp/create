@@ -625,11 +625,7 @@ function sendReceiptMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "receipt",
-          recipient_name: "Peter Chang",
-          order_number: receiptId,
-          currency: "USD",
-          payment_method: "Visa 1234",        
-          timestamp: "1428444852", 
+        
           elements: [{
             title: "Oculus Rift",
             subtitle: "Includes: headset, sensor, remote",
