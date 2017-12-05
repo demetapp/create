@@ -274,15 +274,7 @@ function receivedMessage(event) {
       case 'file':
         sendFileMessage(senderID);
         break;
-
-      case 'button':
-        sendButtonMessage(senderID);
-        break;
-       
-      case 'merhaba':
-        sendDenemeMessage(senderID);
-        break;
-     
+    
       case 'generic':
         sendGenericMessage(senderID);
         break;
@@ -557,20 +549,7 @@ function sendTextMessage(recipientId) {
   callSendAPI(messageData);
 }
 
-function sendDenemeMessage(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-     
-         text: "Doruk mal", 
 
-    }
-  };  
-
-  callSendAPI(messageData);
-}
 /*
  * Send a button message using the Send API.
  *
