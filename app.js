@@ -532,19 +532,19 @@ function sendTextMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Mal ddoruk",
+          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
           buttons:[{
             type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
+            url: "http://www.kilimmobilya.com.tr/satis-noktalari",
+            title: "Satış Noktalarımız"
           }, {
             type: "postback",
-            title: "Trigger Postback",
+            title: "Koleksiyonlar hakkında bilgi almak istiyorum",
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           }, {
             type: "phone_number",
-            title: "Call Phone Number",
-            payload: "+16505551234"
+            title: "İletişim Numaralarımız",
+            payload: "+90 0352 322 02 02"
           }]
         }
       }
