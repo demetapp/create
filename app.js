@@ -529,21 +529,20 @@ function sendTextMessage(recipientId, messageText) {
     },
     message: {
       text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-         attachment: {
-        type: "template",
-        payload: {
-           template_type: "button",
-          buttons:[{
-            type: "Ürünler Hakkında Bilgi alacağım",
-            title: "Bilgi almak istediğiniz ürün koleksiyonunun adını yazabilirmisiniz?",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }, {
-            type: "Görüş bildireceğim",
-            title: "Kilim mobilya ile alakalı görüşleriniz bizim için çok değerli.Sorularınız , önerileriniz ve merak ettiklerinizi bize bildirin müşteri temsilcilerimiz en kısa sürede size ulaşsın.",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }]
-        }
-      }
+        
+      "payload": {
+  "template_type":"button",
+  "text":"<MESSAGE_TEXT>",
+  "buttons":[
+    <BUTTON_OBJECT>, 
+    <BUTTON_OBJECT>, 
+  
+  ]
+}
+        
+        
+       
+      
       metadata: "DEVELOPER_DEFINED_METADATA"
    
     }
