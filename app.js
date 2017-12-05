@@ -533,6 +533,7 @@ function sendTextMessage(recipientId) {
             {
             type: "postback",
             title: "Koleksiyonlar",
+              metadata: "DEVELOPER_DEFINED_METADATA",
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           },
             {
