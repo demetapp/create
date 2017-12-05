@@ -729,7 +729,7 @@ function sendQuickReply(recipientId) {
         {
           "content_type":"text",
           "title":"Action",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
+          "payload":"DEVELOPER_DEFINED_PAYLOAD"
         },
         {
           "content_type":"text",
