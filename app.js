@@ -527,30 +527,24 @@ function sendTextMessage(recipientId, messageText) {
     recipient: {
       id: recipientId
     },
-        message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: messageText,
-          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-          buttons:[{
-            type: "Ürünler Hakkında Bilgi alacağım",
-            title: "Bilgi almak istediğiniz ürün koleksiyonunun adını yazabilirmisiniz?",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }, {
-            type: "Görüş bildireceğim",
-            title: "Kilim mobilya ile alakalı görüşleriniz bizim için çok değerli.Sorularınız , önerileriniz ve merak ettiklerinizi bize bildirin müşteri temsilcilerimiz en kısa sürede size ulaşsın.",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }]
-        }
+    message:{
+    attachment:{
+      type:"template",
+      payload:{
+        template_type:"button",
+        text:"What do you want to do next?",
+        buttons:[
+          {
+            "type":"web_url",
+            "url":"https://www.messenger.com",
+            "title":"Visit Messenger"
+          } ]
       }
-            metadata: "DEVELOPER_DEFINED_METADATA"
-    }
-        
-   
-
-      
+    } metadata: "DEVELOPER_DEFINED_METADATA"
+  }
  
+     
+
   };
 
   callSendAPI(messageData);
