@@ -550,7 +550,7 @@ function sendTextMessage(recipientId, messageText) {
         payload: {
           template_type: "button",
           text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-          metadata: "DEVELOPER_DEFINED_METADATA"
+        
           buttons:[
           
               {
