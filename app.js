@@ -525,7 +525,7 @@ function sendNinoMessage(recipientId) {
       id: recipientId
     },
     message: {
-      text: "nino",
+      text: "Kilim'den çocuklarımıza sürpriz.",
       
     
     }
@@ -644,28 +644,10 @@ function sendReceiptMessage(recipientId) {
             price: 99.99,
             currency: "USD",
             image_url: SERVER_URL + "/assets/gearvrsq.png"
-          }],
-          address: {
-            street_1: "1 Hacker Way",
-            street_2: "",
-            city: "Menlo Park",
-            postal_code: "94025",
-            state: "CA",
-            country: "US"
-          },
-          summary: {
-            subtotal: 698.99,
-            shipping_cost: 20.00,
-            total_tax: 57.67,
-            total_cost: 626.66
-          },
-          adjustments: [{
-            name: "New Customer Discount",
-            amount: -50
-          }, {
-            name: "$100 Off Coupon",
-            amount: -100
           }]
+         
+        
+         
         }
       }
     }
