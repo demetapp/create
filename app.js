@@ -526,13 +526,15 @@ function sendNinoMessage(recipientId) {
     },
      message: {
       attachment: {
-        type: "nino",
+        type: "template",
         payload: {
+           template_type: "nino",
+          elements: [{
           text: "Kilim'den çocuklarımıza sürpriz.",
           title: "NİNO",
             subtitle: "Your Hands, Now in VR",
             item_url: "https://www.oculus.com/en-us/touch/",               
-            image_url: SERVER_URL + "/assets/touch.png"
+            image_url: SERVER_URL + "/assets/touch.png"}]
         }
       }
     }
