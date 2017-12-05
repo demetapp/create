@@ -546,9 +546,7 @@ function sendTextMessage(recipientId, messageText) {
     },
     message: {
       text: "Merhaba Kilim Mobilya facebook sayfasına hoşgeldiniz.Lütfen hakkında bilgi almak istediğiniz koleksiyonun adını yazınız.",
-      text: "nino",
-      text: "motto",
-      text: "life"
+     
       metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
