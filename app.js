@@ -532,7 +532,7 @@ function sendTextMessage(recipientId, messageText) {
          attachment: {
         type: "template",
         payload: {
-          template_type: messageText,
+           template_type: "button",
           buttons:[{
             type: "Ürünler Hakkında Bilgi alacağım",
             title: "Bilgi almak istediğiniz ürün koleksiyonunun adını yazabilirmisiniz?",
