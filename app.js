@@ -527,13 +527,10 @@ function sendTextMessage(recipientId, messageText) {
     recipient: {
       id: recipientId
     },
-    message:{
-    text:"merhb"
-    } metadata: "DEVELOPER_DEFINED_METADATA"
-  }
- 
-     
-
+    message: {
+      text: "text",
+      metadata: "DEVELOPER_DEFINED_METADATA"
+    }
   };
 
   callSendAPI(messageData);
