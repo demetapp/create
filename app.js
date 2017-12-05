@@ -518,25 +518,21 @@ function sendFileMessage(recipientId) {
  * Send a text message using the Send API.
  *
  */
+
 function sendNinoMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "nino",
-          text: "Mal Doruk",
-         
-        }
-      }
+      text: "ninonon",
+    
     }
-  };  
+  };
 
   callSendAPI(messageData);
 }
+
 
 
 function sendTextMessage(recipientId, messageText) {
