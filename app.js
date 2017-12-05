@@ -530,11 +530,7 @@ function sendTextMessage(recipientId) {
           template_type: "button",
           text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
           buttons:[
-            {
-            type: "postback",
-            title: "Koleksiyonlar",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          },
+          
             {
             type: "postback",
             title: "gif",
