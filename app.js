@@ -533,7 +533,6 @@ function sendTextMessage(recipientId) {
             {
             type: "postback",
             title: "Koleksiyonlar",
-              metadata: "DEVELOPER_DEFINED_METADATA",
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           },
             {
@@ -563,7 +562,7 @@ function sendKoleksiyonMessage(recipientId) {
       attachment: {
         type: "template",
         payload: {
-          template_type: "Koleksiyon",
+          template_type: "Koleksiyonlar",
           text: "Koleksiyon listemizden istediğinizi seçip ürünler hakkında detaylı bilgi alabilirsiniz.",
           buttons:[
             {
