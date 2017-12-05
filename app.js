@@ -533,18 +533,21 @@ function sendTextMessage(recipientId) {
         payload: {
           template_type: "button",
           text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-          buttons:[{
+          buttons:[
+            {
+            type: "postback",
+            title: "Koleksiyonlar",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+            {
             type: "web_url",
             url: "http://www.kilimmobilya.com.tr/satis-noktalari",
             title: "Satış Noktalarımız"
-          }, {
-            type: "postback",
-            title: "Koleksiyonlar </br> hakkında bilgi </br> almak istiyorum",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }, {
-            type: "phone_number",
-            title: "İletişim Numaralarımız",
-            payload: "+90 0352 322 02 02"
+          },  {
+            type: "web_url",
+             url: "http://www.kilimmobilya.com.tr/iletisim",
+            title: "İletişim",
+            
           }]
         }
       }
@@ -572,37 +575,6 @@ function sendDenemeMessage(recipientId) {
  * Send a button message using the Send API.
  *
  */
-function sendButtonMessage(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-          buttons:[{
-            type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
-          }, {
-            type: "postback",
-            title: "Trigger Postback",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }, {
-            type: "phone_number",
-            title: "Call Phone Number",
-            payload: "+16505551234"
-          }]
-        }
-      }
-    }
-  };  
-
-  callSendAPI(messageData);
-}
 
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
