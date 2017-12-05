@@ -536,6 +536,11 @@ function sendTextMessage(recipientId) {
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           },
             {
+            type: "postback",
+            title: "gif",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+            {
             type: "web_url",
             url: "http://www.kilimmobilya.com.tr/satis-noktalari",
             title: "Satış Noktalarımız"
