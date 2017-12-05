@@ -525,15 +525,11 @@ function sendNinoMessage(recipientId) {
       id: recipientId
     },
      message: {
-      attachment: {
-        type: "template",
-        payload: {
-           template_type: "nino",
+      
             text: "Kilim'den çocuklarımıza sürpriz.",
         
            image_url: SERVER_URL + "/assets/touch.png"
-        }
-      }
+   
     }
   
   };
