@@ -527,14 +527,13 @@ function sendNinoMessage(recipientId) {
     
      message: {
       
-            text: "Kilim'den çocuklarımıza sürpriz.Nino koleksiyonumuz Country, Dubleks, Kaptan, Mars, Ocaen, Piano.. vb bir çok ürün seçeneğiyle sizleri bekliyor",
-       },
-     message: {
+
       attachment: {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
+                    text: "Kilim'den çocuklarımıza sürpriz.Nino koleksiyonumuz Country, Dubleks, Kaptan, Mars, Ocaen, Piano.. vb bir çok ürün seçeneğiyle sizleri bekliyor.Aşağıdaki butonlara tıklayarak size en yakın bayimizi görebilir veya iletişim numaralarımızdan bize ulaşabilirsiniz.",
+
         
           buttons:[
           
