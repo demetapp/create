@@ -304,7 +304,7 @@ function receivedMessage(event) {
         break;
         
       case 'nino':
-        sendninoMessage(senderID);
+        sendNinoMessage(senderID);
         break;
 
       default:
