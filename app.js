@@ -302,6 +302,10 @@ function receivedMessage(event) {
       case 'account linking':
         sendAccountLinking(senderID);
         break;
+        
+      case 'Koleksiyonlar':
+        sendKoleksiyonMessage(senderID);
+        break;
 
       default:
         sendTextMessage(senderID);
@@ -549,7 +553,41 @@ function sendTextMessage(recipientId) {
   callSendAPI(messageData);
 }
 
+function sendKoleksiyonMessage(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Koleksiyon listemizden istediğinizi seçip ürünler hakkında detaylı bilgi alabilirsiniz.",
+          buttons:[
+            {
+            type: "postback",
+            title: "Nino",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+                 {
+            type: "postback",
+            title: "Life",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+                 {
+            type: "postback",
+            title: "Classica",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+                 }
+         ]
+        }
+      }
+    }
+  };
 
+  callSendAPI(messageData);
+}
 /*
  * Send a button message using the Send API.
  *
