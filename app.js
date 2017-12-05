@@ -528,7 +528,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: messageText,
+      text: "Merhaba",
       metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
