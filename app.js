@@ -544,30 +544,13 @@ function sendTextMessage(recipientId, messageText) {
     recipient: {
       id: recipientId
     },
-    message: {
+   message: {
       attachment: {
         type: "template",
         payload: {
-          template_type: "button",
-          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-        
-          buttons:[
-          
-              {
-            type: "postback",
-            title: "Koleksiyonlar",
-           
-          },
-            {
-            type: "web_url",
-            url: "http://www.kilimmobilya.com.tr/satis-noktalari",
-            title: "Satış Noktalarımız"
-          },  {
-            type: "web_url",
-             url: "http://www.kilimmobilya.com.tr/iletisim",
-            title: "İletişim",
-            
-          }]
+          template_type: "deneme",
+          text: "Mgdgffghfgk",
+         
         }
       }
     }
