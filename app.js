@@ -544,15 +544,9 @@ function sendTextMessage(recipientId, messageText) {
     recipient: {
       id: recipientId
     },
-   message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "deneme",
-          text: "Mgdgffghfgk",
-         
-        }
-      }
+    message: {
+      text: "Merhaba Kilim Mobilya facebook sayfasına hoşgeldiniz.Lütfen hakkında bilgi almak istediğiniz koleksiyonun adını yazınız.",
+      metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
 
