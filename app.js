@@ -308,7 +308,7 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendTextMessage(senderID);
+        sendTextMessage(senderID, messageText);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
@@ -518,42 +518,6 @@ function sendFileMessage(recipientId) {
  * Send a text message using the Send API.
  *
  */
-function sendTextMessage(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-          buttons:[
-          
-            {
-            type: "postback",
-            title: "gif",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          },
-            {
-            type: "web_url",
-            url: "http://www.kilimmobilya.com.tr/satis-noktalari",
-            title: "Satış Noktalarımız"
-          },  {
-            type: "web_url",
-             url: "http://www.kilimmobilya.com.tr/iletisim",
-            title: "İletişim",
-            
-          }]
-        }
-      }
-    }
-  };
-
-  callSendAPI(messageData);
-}
-
 function sendKoleksiyonMessage(recipientId) {
   var messageData = {
     recipient: {
@@ -589,6 +553,45 @@ function sendKoleksiyonMessage(recipientId) {
 
   callSendAPI(messageData);
 }
+
+
+function sendTextMessage(recipientId, messageText) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
+          buttons:[
+          
+              {
+            type: "postback",
+            title: "Koleksiyonlar",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+            {
+            type: "web_url",
+            url: "http://www.kilimmobilya.com.tr/satis-noktalari",
+            title: "Satış Noktalarımız"
+          },  {
+            type: "web_url",
+             url: "http://www.kilimmobilya.com.tr/iletisim",
+            title: "İletişim",
+            
+          }]
+        }
+      }
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+
 /*
  * Send a button message using the Send API.
  *
