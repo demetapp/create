@@ -529,34 +529,7 @@ function sendTextMessage(recipientId, messageText) {
     },
     message: {
       text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
-        
-      message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "Mal ddoruk",
-          buttons:[{
-            type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
-          }, {
-            type: "postback",
-            title: "Trigger Postback",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          }, {
-            type: "phone_number",
-            title: "Call Phone Number",
-            payload: "+16505551234"
-          }]
-        }
-      }
-    }
-        
-        
-       
-      
-      metadata: "DEVELOPER_DEFINED_METADATA"
+       metadata: "DEVELOPER_DEFINED_METADATA"
    
     }
       
