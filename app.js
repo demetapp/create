@@ -312,7 +312,7 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendTextMessage(senderID, messageText);
+        sendTextMessage(senderID);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
@@ -522,14 +522,32 @@ function sendFileMessage(recipientId) {
  * Send a text message using the Send API.
  *
  */
-function sendTextMessage(recipientId, messageText) {
+function sendTextMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      text: "text",
-      metadata: "DEVELOPER_DEFINED_METADATA"
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Mal ddoruk",
+          buttons:[{
+            type: "web_url",
+            url: "https://www.oculus.com/en-us/rift/",
+            title: "Open Web URL"
+          }, {
+            type: "postback",
+            title: "Trigger Postback",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          }, {
+            type: "phone_number",
+            title: "Call Phone Number",
+            payload: "+16505551234"
+          }]
+        }
+      }
     }
   };
 
