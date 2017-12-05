@@ -562,7 +562,7 @@ function sendKoleksiyonMessage(recipientId) {
       attachment: {
         type: "template",
         payload: {
-          template_type: "button",
+          template_type: "Koleksiyon",
           text: "Koleksiyon listemizden istediğinizi seçip ürünler hakkında detaylı bilgi alabilirsiniz.",
           buttons:[
             {
