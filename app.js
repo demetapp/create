@@ -529,7 +529,7 @@ function sendNinoMessage(recipientId) {
        title: "NİNO",
             subtitle: "Your Hands, Now in VR",
             item_url: "https://www.oculus.com/en-us/touch/",               
-            image_url: SERVER_URL + "/assets/touch.png",
+            image_url: SERVER_URL + "/assets/touch.png"
     
     }
   };
