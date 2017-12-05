@@ -303,8 +303,8 @@ function receivedMessage(event) {
         sendAccountLinking(senderID);
         break;
         
-      case 'Koleksiyonlar':
-        sendKoleksiyonMessage(senderID);
+      case 'nino':
+        sendninoMessage(senderID);
         break;
 
       default:
@@ -518,7 +518,7 @@ function sendFileMessage(recipientId) {
  * Send a text message using the Send API.
  *
  */
-function sendKoleksiyonMessage(recipientId) {
+function sendNinoMessage(recipientId) {
   var messageData = {
     recipient: {
       id: recipientId
@@ -527,7 +527,7 @@ function sendKoleksiyonMessage(recipientId) {
       attachment: {
         type: "template",
         payload: {
-          template_type: "Koleksiyonlar",
+          template_type: "nino",
           text: "Mal Doruk",
          
         }
@@ -546,6 +546,9 @@ function sendTextMessage(recipientId, messageText) {
     },
     message: {
       text: "Merhaba Kilim Mobilya facebook sayfasına hoşgeldiniz.Lütfen hakkında bilgi almak istediğiniz koleksiyonun adını yazınız.",
+      text: "nino",
+      text: "motto",
+      text: "life"
       metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
