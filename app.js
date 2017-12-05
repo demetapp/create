@@ -525,8 +525,8 @@ function sendNinoMessage(recipientId) {
       id: recipientId
     },
     message: {
-      text: "ninonon",
-      url: SERVER_URL + "/assets/rift.png"
+      text: "nino",
+      
     
     }
   };
