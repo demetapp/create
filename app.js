@@ -524,10 +524,39 @@ function sendNinoMessage(recipientId) {
     recipient: {
       id: recipientId
     },
+    
      message: {
       
             text: "Kilim'den çocuklarımıza sürpriz.Nino koleksiyonumuz Country, Dubleks, Kaptan, Mars, Ocaen, Piano.. vb bir çok ürün seçeneğiyle sizleri bekliyor",
-       }
+       },
+     message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
+        
+          buttons:[
+          
+              {
+            type: "postback",
+            title: "Koleksiyonlar",
+            payload: "DEVELOPER_DEFINED_PAYLOAD"
+          },
+            {
+            type: "web_url",
+            url: "http://www.kilimmobilya.com.tr/satis-noktalari",
+            title: "Satış Noktalarımız"
+          },  {
+            type: "web_url",
+             url: "http://www.kilimmobilya.com.tr/iletisim",
+            title: "İletişim",
+            
+          }]
+        }
+      }
+    }
+    
   
   };
 
