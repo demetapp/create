@@ -533,7 +533,7 @@ function sendTextMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Mal ddoruk",
+          text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
           buttons:[{
             type: "Ürünler Hakkında Bilgi alacağım",
             title: "Bilgi almak istediğiniz ürün koleksiyonunun adını yazabilirmisiniz?",
