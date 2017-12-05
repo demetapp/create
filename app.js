@@ -526,6 +526,7 @@ function sendNinoMessage(recipientId) {
     },
     message: {
       text: "ninonon",
+      url: SERVER_URL + "/assets/rift.png"
     
     }
   };
