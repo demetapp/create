@@ -526,11 +526,8 @@ function sendNinoMessage(recipientId) {
     },
      message: {
       
-            text: "Kilim'den çocuklarımıza sürpriz.",
-        
-           image_url: SERVER_URL + "/assets/touch.png"
-   
-    }
+            text: "Kilim'den çocuklarımıza sürpriz.Nino koleksiyonumuz Country, Dubleks, Kaptan, Mars, Ocaen, Piano.. vb bir çok ürün seçeneğiyle sizleri bekliyor",
+       }
   
   };
 
