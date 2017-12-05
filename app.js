@@ -303,7 +303,7 @@ function receivedMessage(event) {
         sendAccountLinking(senderID);
         break;
         
-      case 'koleksiyonlar':
+      case 'Koleksiyonlar':
         sendKoleksiyonMessage(senderID);
         break;
 
@@ -527,7 +527,7 @@ function sendKoleksiyonMessage(recipientId) {
       attachment: {
         type: "template",
         payload: {
-          template_type: "koleksiyon",
+          template_type: "Koleksiyonlar",
           text: "Mal Doruk",
          
         }
@@ -555,7 +555,7 @@ function sendTextMessage(recipientId, messageText) {
           
               {
             type: "postback",
-            title: "koleksiyonlar",
+            title: "Koleksiyonlar",
             payload: "DEVELOPER_DEFINED_PAYLOAD"
           },
             {
