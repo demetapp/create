@@ -527,29 +527,13 @@ function sendKoleksiyonMessage(recipientId) {
       attachment: {
         type: "template",
         payload: {
-          template_type: "Koleksiyonlar",
-          text: "Koleksiyon listemizden istediğinizi seçip ürünler hakkında detaylı bilgi alabilirsiniz.",
-          buttons:[
-            {
-            type: "postback",
-            title: "Nino",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          },
-                 {
-            type: "postback",
-            title: "Life",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-          },
-                 {
-            type: "postback",
-            title: "Classica",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
-                 }
-         ]
+          template_type: "Koleksiyon",
+          text: "Mal Doruk",
+         
         }
       }
     }
-  };
+  };  
 
   callSendAPI(messageData);
 }
