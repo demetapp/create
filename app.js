@@ -528,7 +528,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: "Merhaba",
+      text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
       metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
