@@ -529,7 +529,7 @@ function sendTextMessage(recipientId) {
             {
             type: "postback",
             title: "Koleksiyonlar",
-            payload: "DEVELOPER_DEFINED_PAYLOAD"
+            payload: "Koleksiyonlar"
           },
             {
             type: "web_url",
