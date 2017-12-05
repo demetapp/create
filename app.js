@@ -530,10 +530,10 @@ function sendTextMessage(recipientId, messageText) {
     message: {
       text: "Merhaba Kilim Mobilya Facebook sayfasına Hoşgeldiniz.Size nasıl yardımcı olabilirim?",
         
-      "payload": {
-  "template_type":"button",
-  "text":"<MESSAGE_TEXT>",
-  "buttons":[
+      payload: {
+  template_type :"button",
+
+  buttons:[
     <BUTTON_OBJECT>, 
     <BUTTON_OBJECT>, 
   
